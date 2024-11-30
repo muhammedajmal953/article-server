@@ -90,7 +90,7 @@ export class UserServices {
             };
         }
     }
-
+      
     async editUser(id:string,updations:any) {
         try {
             const update=await User.findByIdAndUpdate(id,{$set:updations})
